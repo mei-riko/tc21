@@ -19,32 +19,6 @@ html,body {
     overflow: hidden;
 }
 
-.show-overlay{
-    overflow: hidden;
-    position: relative;
-    z-index: 101;
-
-    &:after{
-        content: '';
-        display: block;
-
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-
-        background-color: $black;
-        opacity: .4;
-
-        z-index: 101;
-    }
-}
-.above-overlay{
-    position: relative;
-    z-index: 121;
-}
-
 p {
     font-size: 1rem;
     margin-top: 0;
@@ -94,27 +68,9 @@ table{
 .bg-black{background-color: $black;}
 .bg-white{background-color: $white;}
 .bg-grey{background-color: $grey;}
-.bg-light-grey{background-color: $light-grey;}
-.bg-lightest-grey{background-color: $lightest-grey;}
 
 .text-white{color: $white;}
 .text-black{color: $black;}
-
-// .overlay{
-//     position: fixed;
-//     left: 0;
-//     right: 0;
-//     top: 0;
-//     bottom: 0;
-//     z-index: 89;
-
-//     background: rgba(0,0,0,.4);
-
-//     &--disable{
-//         position: inherit;
-//         display: none;
-//     }
-// }
 
 .p-relative {position: relative;}
 .p-sticky   {position: sticky; top: 0; left: 0; z-index: 101;}
@@ -151,11 +107,6 @@ hr, .hr{
     border-bottom: 1px solid $border-color;
 }
 
-// blockquote, .blockquote{
-//     padding: $spacer;
-//     background-color: $body-bg;
-//     border-radius: $border-radius;
-// }
 
 @media all and (max-width: map-get($grid-breakpoints, 'xl')){
     .text-xl{
@@ -177,9 +128,6 @@ hr, .hr{
         &-center{text-align: center;}
         &-right{text-align: right;}
     }
-    blockquote, .blockquote{
-        padding: $spacer/2;
-    }
 }
 @media all and (max-width: map-get($grid-breakpoints, 'sm')){
     .text-sm{
@@ -190,7 +138,6 @@ hr, .hr{
 }
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
     html, body {
-        background-color: $white;
         font-size: map-get($font-size, 'sm');
     }
     .text-xs{
