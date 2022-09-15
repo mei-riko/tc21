@@ -1,0 +1,61 @@
+- var tel = {'item':"8 800 600 44 22",'link':"tel:88006004422"}
+- var email = {'item':"demo@demo.ru",'link':"mailto:demo@demo.ru"}
+
+mixin item(image, title, subtitle, percent, period, content, info)
+    a.item.item_link.item_strategy(href="page.html")
+        .item_strategy__body
+            .item_strategy__header
+                .item_strategy__title
+                    .item__subtitle=subtitle 
+                    .item__title=title
+                .item__image
+                    img.img-fluid.item_strategy__icon(src=image)
+            .item__stats
+                .item__stats-item
+                    .item__stats-title=period
+                    .item__stats-offer Срок вложений
+                .item__stats-item
+                    .item__stats-title=percent
+                    .item__stats-offer Годовых в рублях
+            .item__content=content
+            
+        .item_strategy__footer
+            if info
+                .item__label
+                    .item__label-modal ИИС
+                    .item__label-content=info
+            .item__risk 
+                svg.item__risk-icon(width="76" height="13" viewBox="0 0 76 13" fill="none" xmlns="http://www.w3.org/2000/svg")
+                    circle.item__risk-active(cx="6" cy="6.49976" r="6")
+                    circle.item__risk-active(cx="22" cy="6.49976" r="6")
+                    circle.item__risk-active(cx="38" cy="6.49976" r="6")
+                    circle.item__risk-disabled(cx="54" cy="6.49976" r="6")
+                    circle.item__risk-disabled(cx="70" cy="6.49976" r="6")
+                .item__risk-title Уровень риска
+block variables
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        title= pageTitle
+
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet")
+        
+        link(href="./css/framework.css", rel="stylesheet")
+        link(href="./css/main.css", rel="stylesheet")
+
+    body
+        //- script(src="./js/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+        
+        include ./header/header.pug
+        block content
+        include ./footer/footer.pug
+        block footer
+        link(href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css", rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js")
+        script(src="./js/jquery.inputmask.min.js")
+        script(src="./js/app.min.js")
