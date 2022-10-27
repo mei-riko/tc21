@@ -1,0 +1,18 @@
+.content_objects{
+    background: $action url('../img/indexHeroBg.png') no-repeat top left / cover;
+    color: $white;
+
+    &__heading{
+        margin-bottom: map-get($map: $spacers, $key: 3);
+
+        &:before{
+            background-color: $white;
+        }
+    }
+
+    &__row{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: map-get($map: $spacers, $key: 3);
+    }
+}

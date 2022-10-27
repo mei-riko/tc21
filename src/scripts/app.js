@@ -24,10 +24,10 @@ $(function() {
 });
 
 import './mouseup';
-import '../blocks/tabs/tabs';
-import '../items/input/input';
-import '../items/slider/slider';
-import '../items/toggle/toggle';
-import '../items/item/item';
-import '../blocks/calculator/calculator';
-import '../blocks/header/header';
+// import '../blocks/tabs/tabs';
+// import '../items/input/input';
+// import '../items/slider/slider';
+// import '../items/toggle/toggle';
+// import '../items/item/item';
+// import '../blocks/calculator/calculator';
+// import '../blocks/header/header';

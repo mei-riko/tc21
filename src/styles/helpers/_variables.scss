@@ -36,15 +36,18 @@ $container-max-widths: (
   xs: 100%,
   sm: 100%,
   md: 100%,
-  lg: 720px,
-  xl: 960px,
-  hd: 1280px,
+  lg: 100%,
+  xl: 100%,
+  hd: 100%,
+  // lg: 720px,
+  // xl: 960px,
+  // hd: 1280px,
 ) !default;
 
 
-$font-weight          : 400;
-$font-weight-bolder   : 500;
-$font-weight-bold     : 700;
+$font-weight          : 500;
+$font-weight-bolder   : 600;
+$font-weight-bold     : 800;
 
 $dt-font-weight       : $font-weight-bold !default;
 
@@ -64,9 +67,9 @@ $font-size: (
   // btn
   sm: 14px,
   // main
-  md: 18px,
+  md: 16px,
   // lead
-  lg: 22px
+  lg: 20px
 ) !default;
 
 $heading: (

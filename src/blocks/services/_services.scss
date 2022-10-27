@@ -1,0 +1,33 @@
+.services{
+    margin-top: map-get($map: $spacers, $key: 4);
+
+    display: grid;
+    grid-gap: map-get($map: $spacers, $key: 3);
+    grid-template-columns: repeat(3, 1fr);
+    
+    &__item{
+        &-title{
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            padding-bottom: map-get($map: $spacers, $key: 1);
+            margin-bottom: map-get($map: $spacers, $key: 1);
+
+            border-bottom: 1px solid $border-color;
+
+            filter: opacity(0.5);
+
+            &--active{
+                filter: opacity(1);
+            }
+        }
+        &-intro{
+            filter: opacity(0);
+            height: 1px;
+
+            &--active{
+                filter: opacity(1);
+                height: auto;
+            }
+        }
+    }
+}

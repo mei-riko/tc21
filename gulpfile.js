@@ -48,7 +48,7 @@ var gulp = require("gulp"),
   });
 
   gulp.task('scripts', function () {
-    return gulp.src('./src/js/app.js')
+    return gulp.src('./src/scripts/app.js')
       .pipe(plumber())
       .pipe(webpackStream({
         output: {

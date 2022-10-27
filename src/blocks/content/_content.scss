@@ -1,0 +1,63 @@
+.content{
+    padding: map-get($map: $spacers, $key: 4);
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    margin-bottom: map-get($map: $spacers, $key: 2);
+
+    &__heading{
+        margin-bottom: map-get($map: $spacers, $key: 2);
+
+        &-1{}
+        &-2{
+            position: relative;
+            padding-left: 70px;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+
+            &:before{
+                content: '';
+                display: block;
+                position: absolute;
+                
+                width: 50px;
+                height: 1px;
+
+                top: 50%;
+                left: 0;
+
+                background-color: $black;
+            }
+        }
+    }
+    &__intro{
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+    &__scroll-down{
+        cursor: pointer;
+
+        animation-name: spin;
+        animation-duration: 40000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+
+        transition: .3s;
+
+        @keyframes spin { 
+            from { 
+                transform: rotate(0deg); 
+            } to { 
+                transform: rotate(360deg); 
+            }
+        }
+
+        &:hover{
+            filter: opacity(.7);
+        }
+    }
+    &__image{
+        background-position: center;
+        background-size: cover;
+        height: 440px;
+    }
+}
