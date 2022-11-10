@@ -1,7 +1,4 @@
 .content_objects{
-    background: $action url('../img/indexHeroBg.png') no-repeat top left / cover;
-    color: $white;
-
     &__heading{
         margin-bottom: map-get($map: $spacers, $key: 3);
 

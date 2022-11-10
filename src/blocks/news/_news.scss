@@ -1,0 +1,31 @@
+.news{
+    display: grid;
+    grid-gap: map-get($map: $spacers, $key: 3);
+    grid-template-columns: repeat(3, 1fr);
+
+    &__item{
+        background-color: $white;
+        padding: map-get($map: $spacers, $key: 3);
+        border-radius: $border-radius;
+
+        &-title{
+            font-weight: $font-weight-bold;
+            text-transform: uppercase;
+            margin-bottom: map-get($map: $spacers, $key: 1);
+        }
+        &-intro{
+            color: $black;
+            margin-bottom: map-get($map: $spacers, $key: 1);
+        }
+        &-data{
+            color: $black;
+            filter: opacity(0.5);
+            padding-bottom: map-get($map: $spacers, $key: 1);
+            border-bottom: 1px solid $border-color;
+        }
+
+        &:hover, &:focus{
+            text-decoration: none;
+        }
+    }
+}

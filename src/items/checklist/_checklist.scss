@@ -1,0 +1,18 @@
+.checklist{
+    padding: 0;
+    
+    &__item{
+        display: grid;
+        grid-gap: map-get($map: $spacers, $key: 1);
+        grid-template-columns: 20px auto;
+
+        margin-bottom: map-get($map: $spacers, $key: 1);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    &__icon{
+        transform: translateY(2px);
+    }
+}

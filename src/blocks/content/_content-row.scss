@@ -1,0 +1,5 @@
+.content-row{
+    display: grid;
+    grid-gap: map-get($map: $spacers, $key: 2);
+    grid-template-columns: 1fr 1fr;
+}

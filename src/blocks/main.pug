@@ -1,24 +1,6 @@
 - var tel = {'item':"8 800 600 44 22",'link':"tel:88006004422"}
 - var email = {'item':"demo@demo.ru",'link':"mailto:demo@demo.ru"}
 
-mixin item(image, title, subtitle, percent, period, content, info)
-    a.item.item_link.item_strategy(href="page.html")
-        .item_strategy__body
-            .item_strategy__header
-                .item_strategy__title
-                    .item__subtitle=subtitle 
-                    .item__title=title
-                .item__image
-                    img.img-fluid.item_strategy__icon(src=image)
-            .item__stats
-                .item__stats-item
-                    .item__stats-title=period
-                    .item__stats-offer Срок вложений
-                .item__stats-item
-                    .item__stats-title=percent
-                    .item__stats-offer Годовых в рублях
-            .item__content=content
-
 block variables
 html(lang="ru")
     head

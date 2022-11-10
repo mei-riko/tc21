@@ -1,0 +1,11 @@
+.tabs-content{
+    display: none;
+
+    &--active{
+        display: block;
+    }
+
+    &__body{
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+}

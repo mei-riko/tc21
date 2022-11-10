@@ -2,20 +2,9 @@
     position: relative;
     padding-top: 180px;
 
+    margin-top: map-get($map: $spacers, $key: 2);
+
     background: $action url('../img/indexHeroBg.png') no-repeat top left / cover;
     color: $white;
     overflow: hidden;
-
-    // &:before{
-    //     content: '';
-    //     display: block;
-    //     background: $action url('../img/noise.png') repeat top left;
-    //     background-blend-mode: soft-light;
-
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     right: 0;
-    //     bottom: 0;
-    // }
 }

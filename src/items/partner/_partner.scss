@@ -1,0 +1,10 @@
+.partner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: map-get($map: $spacers, $key: 3);
+
+    &__logo{
+        width: auto;
+        height: 40px;
+    }
+}

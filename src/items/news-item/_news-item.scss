@@ -1,0 +1,28 @@
+.news-item{
+    &:hover{
+        text-decoration: none;
+    }
+    &__image{
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+    &__heading{
+        display: grid;
+        grid-gap: map-get($map: $spacers, $key: 1);
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: map-get($map: $spacers, $key: 3);
+    }
+    &__title{
+        text-transform: uppercase;
+        font-weight: $font-weight-bold;
+    }
+    &__date{
+        color: $black;
+        text-align: right;
+    }
+    &__intro{
+        color: $black;
+    }
+}

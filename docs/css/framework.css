@@ -94,7 +94,7 @@ blockquote {
 
 b,
 strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 small {
@@ -332,8 +332,8 @@ template {
 .container {
   width: 100%;
   max-width: 100%;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -344,8 +344,8 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-right: -20px;
-  margin-left: -20px;
+  margin-right: -10px;
+  margin-left: -10px;
 }
 
 .no-gutters {
@@ -405,8 +405,8 @@ template {
 .col, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   position: relative;
   width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .col {
@@ -1892,7 +1892,7 @@ template {
 }
 
 html, body {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 1.4;
   -webkit-box-sizing: border-box;
@@ -2012,7 +2012,7 @@ table td {
 }
 
 .text-bolder {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .text-bold, strong, b {
@@ -2028,7 +2028,7 @@ table td {
 }
 
 .text-lead, .lead {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
 }
 
 .text-spacing {

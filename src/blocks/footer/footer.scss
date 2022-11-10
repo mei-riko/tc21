@@ -1,116 +1,73 @@
 .footer{
-    padding: map-get($map: $spacers, $key: 4) 0 map-get($map: $spacers, $key: 5);
-    background: $black;
-    color: $white;
+    
+    &__row{
+        padding: map-get($map: $spacers, $key: 4);
+        border-radius: $border-radius;
+        background: $black;
+        color: $white;
 
+        margin-bottom: map-get($map: $spacers, $key: 2);
+
+        &_additional{
+            font-size: map-get($map: $font-size, $key: sm);
+
+            border-radius: $border-radius;
+            padding-top: map-get($map: $spacers, $key: 2);
+            padding-bottom: map-get($map: $spacers, $key: 2);
+        }
+    }
+    
     &__logo{
-        height: 22px;
-        margin-bottom: map-get($map: $spacers, $key: 1);
+        height: 28px;
+        fill: $white;
+        margin-bottom: map-get($map: $spacers, $key: 2);
     }
+    &__title{
+        font-size: map-get($map: $font-size, $key: sm);
+        text-transform: uppercase;
 
-    &__label{
-        filter: opacity(.4);
-        margin-bottom: $spacer-gutter;
-    }
-    &__address{
-        width: 295px;
-        max-width: 100%;
-
-        margin-bottom: map-get($map: $spacers, $key: 1);
-    }
-
-    // Контактная информация
-    &__contact{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: map-get($map: $spacers, $key: 1);
-    }
-    &__phone{
-        font-size: map-get($map: $font-size, $key: lg);
-        color: $white;
-    }
-    &__email{
-        color: $white;
-    }
-
-    // Соцсети
-    &__networks{
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(32px, 1fr));
-        grid-gap: map-get($map: $spacers, $key: 1);
-    }
-    &__network-item{
-        transition: $transition-base;
-
-        &:hover{
-            filter: opacity(.4);
-        }
-    }
-    // Ссылки на лицензии
-    &__license{
-        display: flex;
-        align-items: flex-start;
-
-        color: $white;
-        margin-bottom: 8px;
-
-        &-icon{
-            filter: opacity(.4);
-            margin-left: $spacer-gutter;
-        }
-    }
-    &__link{
-        color: $white;
-
-        &:hover{
-            color: $link-hover-color;
-        }
-    }
-    // Копирайт
-    &__copyright{
-        filter: opacity(.6);
-        margin-top: map-get($map: $spacers, $key: 1);
-    }
-    // Доп. текст
-    &__additional{
-        margin-top: map-get($map: $spacers, $key: 4);
+        filter: opacity(0.75);
+        margin-bottom: map-get($map: $spacers, $key: 2);
     }
     &__content{
-        filter: opacity(.4);
-        margin-bottom: 2*$spacer-gutter;
+        margin-bottom: map-get($map: $spacers, $key: 1);
 
-        &:last-child{
-            margin-bottom: 0;
-        }
-
-        &_heading{
-            font-weight: $font-weight-bold;
-            filter: opacity(1);
+        &-additional{
+            filter: opacity(0.5);
+            margin-bottom: map-get($map: $spacers, $key: 2);
         }
     }
-}
-// < 576px
-@media all and (max-width: map-get($grid-breakpoints, 'sm')){
-    .footer{
-        padding: map-get($map: $spacers, $key: 2) 0 map-get($map: $spacers, $key: 3);
+    &__contact{
+        margin-bottom: map-get($map: $spacers, $key: 1);
 
-        // Доп. текст
-        &__additional{
-            margin-top: map-get($map: $spacers, $key: 2);
+        &:last-of-type{
+            margin-bottom: map-get($map: $spacers, $key: 2);
         }
-        &__license,
-        &__content{
-            font-size: map-get($map: $font-size, $key: sm);
+    }
+    &__btn{
+        display: inline-block;
+        border: 1px solid $white;
+        border-radius: 24px;
+        color: $white;
+        padding: 8px 20px;
+
+        font-size: map-get($map: $font-size, $key: sm);
+
+        &:hover, &:focus{
+            text-decoration: none;
+            color: $grey;
+            border-color: $grey;
+
+            background-color: rgba(255,255,255,0.05);
         }
+    }
+    &__links{
+        color: $white;
+    }
+    &__sep{
+        margin: 0 map-get($map: $spacers, $key: 1);
     }
 }
 // < 375px
 @media all and (max-width: map-get($grid-breakpoints, 'xs')){
-    .footer{
-        // Контактная информация
-        &__contact{
-            grid-gap: 2*$spacer-gutter;
-        }
-        
-    }
 }

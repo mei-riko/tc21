@@ -1,0 +1,26 @@
+.pagination{
+    padding: map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 4);
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+
+    margin-bottom: map-get($map: $spacers, $key: 2);
+
+    display: flex;
+    justify-content: center;
+
+    &__item{
+        font-size: map-get($map: $font-size, $key: lg);
+        font-weight: $font-weight-bold;
+
+        padding: 0 map-get($map: $spacers, $key: 1);
+        filter: opacity(0.5);
+
+        &:hover{
+            filter: opacity(1);
+        }
+
+        &--active{
+            filter: opacity(1);
+        }
+    }
+}

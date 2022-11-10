@@ -1,12 +1,38 @@
 @import "../styles/helpers/variables";
 
 @import "../items/btn/btn";
+@import "../items/btn/btn_w-icon";
+@import "../items/btn/btn_primary";
 @import "../items/btn/btn_secondary";
 
+@import "../items/form/form";
+@import "../items/form/form_quiz";
+
+@import "../items/checkbox/checkbox";
+
+@import "../items/nav/nav";
+@import "../items/checklist/checklist";
+@import "../items/partner/partner";
+@import "../items/slider/slider";
+
+@import "../items/tabs/tabs-toggle";
+@import "../items/tabs/tabs-content";
+
+@import "../items/news-item/news-item";
+
+@import "../blocks/header/header";
+@import "../blocks/footer/footer";
+@import "../blocks/pagination/pagination";
+
+@import "../blocks/content/content-row";
+
 @import "../blocks/content/content";
+@import "../blocks/content/content_action";
 @import "../blocks/content/content_hero";
 @import "../blocks/content/content_link";
 @import "../blocks/content/content_objects";
+@import "../blocks/content/content_map";
 
 @import "../blocks/advantages/advantages";
 @import "../blocks/services/services";
+@import "../blocks/news/news";

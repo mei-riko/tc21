@@ -13,7 +13,7 @@
             position: relative;
             padding-left: 70px;
             text-transform: uppercase;
-            font-weight: $font-weight-bold;
+            font-weight: $font-weight-bolder;
 
             &:before{
                 content: '';
@@ -27,6 +27,13 @@
                 left: 0;
 
                 background-color: $black;
+            }
+
+            &_inverse{
+                margin-bottom: map-get($map: $spacers, $key: 2);
+                &:before{
+                    background-color: $white;
+                }
             }
         }
     }
@@ -59,5 +66,11 @@
         background-position: center;
         background-size: cover;
         height: 440px;
+    }
+    &__map{
+        margin-top: map-get($map: $spacers, $key: 4);
+    }
+    &__contact{
+        margin-top: map-get($map: $spacers, $key: 3);
     }
 }

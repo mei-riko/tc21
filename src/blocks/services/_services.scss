@@ -1,14 +1,24 @@
 .services{
-    margin-top: map-get($map: $spacers, $key: 4);
-
     display: grid;
     grid-gap: map-get($map: $spacers, $key: 3);
     grid-template-columns: repeat(3, 1fr);
+
+    &_with-heading{
+        margin-top: map-get($map: $spacers, $key: 4);
+    }
     
     &__item{
+        color: $black;
+
+        &:hover{
+            text-decoration: none;
+            color: $black;
+        }
+        
         &-title{
             text-transform: uppercase;
-            font-weight: $font-weight-bold;
+            font-weight: $font-weight-bolder;
+            
             padding-bottom: map-get($map: $spacers, $key: 1);
             margin-bottom: map-get($map: $spacers, $key: 1);
 

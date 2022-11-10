@@ -1,0 +1,56 @@
+extends ../blocks/main.pug
+
+block variables
+    - var pageTitle = "News"
+    - var headerBlockClass = "header-block_inside"
+    - var headerClass = "header_inside"
+block content
+    .container
+        .content
+            .row
+                .col-4.col-sm-12
+                    p.content__heading-2 Секреты нашего успеха
+                .col-8.col-sm-12
+                    p Быстро анализируем ситуацию и находим оптимальные решения. Знаем откуда ждать неожиданностей и готовы к нестандартным ситуациям. Мы накопили огромную базу знаний и опыта, чтобы наилучшим образом решать бизнес-задачи партнеров.
+        .content-row
+            .content
+                a.news-item(href="#")
+                    img.news-item__image(src="../img/demo-news.png" width="100%")
+                    .news-item__heading
+                        .news-item__title Заголовок новости
+                        .news-item__date 17.02.2021
+                    p.news-item__intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ante ut vestibulum suspendisse. Imperdiet in id malesuada lacus. Viverra consectetur quisque porttitor at. Placerat risus quis consequat amet porta in nunc, pellentesque. Dictum et at turpis ut. Convallis eget lacus arcu bibendum.
+            .content
+                a.news-item(href="#")
+                    img.news-item__image(src="../img/demo-news.png" width="100%")
+                    .news-item__heading
+                        .news-item__title Заголовок новости
+                        .news-item__date 17.02.2021
+                    p.news-item__intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ante ut vestibulum suspendisse. Imperdiet in id malesuada lacus. Viverra consectetur quisque porttitor at. Placerat risus quis consequat amet porta in nunc, pellentesque. Dictum et at turpis ut. Convallis eget lacus arcu bibendum.
+            .content
+                a.news-item(href="#")
+                    img.news-item__image(src="../img/demo-news.png" width="100%")
+                    .news-item__heading
+                        .news-item__title Заголовок новости
+                        .news-item__date 17.02.2021
+                    p.news-item__intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ante ut vestibulum suspendisse. Imperdiet in id malesuada lacus. Viverra consectetur quisque porttitor at. Placerat risus quis consequat amet porta in nunc, pellentesque. Dictum et at turpis ut. Convallis eget lacus arcu bibendum.
+            .content
+                a.news-item(href="#")
+                    img.news-item__image(src="../img/demo-news.png" width="100%")
+                    .news-item__heading
+                        .news-item__title Заголовок новости
+                        .news-item__date 17.02.2021
+                    p.news-item__intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ante ut vestibulum suspendisse. Imperdiet in id malesuada lacus. Viverra consectetur quisque porttitor at. Placerat risus quis consequat amet porta in nunc, pellentesque. Dictum et at turpis ut. Convallis eget lacus arcu bibendum.
+            .content
+                a.news-item(href="#")
+                    img.news-item__image(src="../img/demo-news.png" width="100%")
+                    .news-item__heading
+                        .news-item__title Заголовок новости
+                        .news-item__date 17.02.2021
+                    p.news-item__intro Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam ante ut vestibulum suspendisse. Imperdiet in id malesuada lacus. Viverra consectetur quisque porttitor at. Placerat risus quis consequat amet porta in nunc, pellentesque. Dictum et at turpis ut. Convallis eget lacus arcu bibendum.
+        .pagination 
+            a.pagination__item(href="#") 1
+            span.pagination__item.pagination__item--active(href="#") 2
+            a.pagination__item(href="#") 3
+            a.pagination__item(href="#") 4
+            a.pagination__item(href="#") 5

@@ -1,0 +1,16 @@
+.btn_w-icon{
+    display: inline-grid;
+    grid-template-columns: auto 16px;
+    grid-gap: map-get($map: $spacers, $key: 1);
+    align-items: center;
+
+    &__icon{
+        transition: $transition-base;
+    }
+
+    &:hover{
+        .btn_w-icon__icon{
+            transform: translateX(4px);
+        }
+    }
+}

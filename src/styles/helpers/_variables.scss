@@ -5,7 +5,7 @@ $violet               : #5F37FF;
 $light-violet         : #DDD5FF;
 
 $red                  : #FF490C;
-$blu                  : #145DFF;
+$blue                 : #145DFF;
 $grey                 : #F4F1EF;
 
 $action               : $violet;
@@ -46,7 +46,7 @@ $container-max-widths: (
 
 
 $font-weight          : 500;
-$font-weight-bolder   : 600;
+$font-weight-bolder   : 700;
 $font-weight-bold     : 800;
 
 $dt-font-weight       : $font-weight-bold !default;
@@ -67,7 +67,7 @@ $font-size: (
   // btn
   sm: 14px,
   // main
-  md: 16px,
+  md: 15px,
   // lead
   lg: 20px
 ) !default;

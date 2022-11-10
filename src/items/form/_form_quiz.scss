@@ -1,0 +1,13 @@
+.form_quiz{
+    &__step{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: map-get($map: $spacers, $key: 2);
+
+        display: none;
+
+        &--active{
+            display: grid;
+        }
+    }
+}

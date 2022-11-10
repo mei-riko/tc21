@@ -21,6 +21,14 @@ $(function() {
         autoFocus: false,
         dragToClose: false,
     });
+    // Slick
+    if( $('.slider') ){
+        $('.slider.slider_partners').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+    }
 });
 
 import './mouseup';

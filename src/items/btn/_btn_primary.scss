@@ -1,0 +1,10 @@
+.btn_primary{
+    border: 1px solid $border-color;
+    background-color: $black;
+    color: $white;
+
+    &:hover{
+        color: $white;
+        background-color: darken($color: $black, $amount: 10);
+    }
+}

@@ -1,0 +1,45 @@
+.slider{
+    &__item{
+        height: auto;
+        padding: 0 map-get($map: $spacers, $key: 2);
+
+        // Slick
+        &.slick-slide{
+            height: auto;
+        }
+    }
+
+    // Slick
+    .slick-prev{
+        background: url("../icon/arrow-left.svg") no-repeat center / contain;
+        width: 32px;
+        height: 32px;
+
+        left: -32px;
+
+        &:before{
+            content: '';
+        }
+
+        &:hover, &:focus{
+            background: url("../icon/arrow-left.svg") no-repeat center / contain;
+            filter: opacity(0.75);
+        }
+    }
+    .slick-next{
+        background: url("../icon/arrow-right.svg") no-repeat center / contain;
+        width: 32px;
+        height: 32px;
+        
+        right: -32px;
+
+        &:before{
+            content: '';
+        }
+
+        &:hover, &:focus{
+            background: url("../icon/arrow-right.svg") no-repeat center / contain;
+            filter: opacity(0.75);
+        }
+    }
+}
