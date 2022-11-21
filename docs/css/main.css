@@ -3,6 +3,7 @@
   text-align: center;
   border-radius: 6px;
   padding: 16px 24px;
+  cursor: pointer;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -137,6 +138,22 @@
   width: 100%;
 }
 
+.form__notification {
+  display: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: 1px solid #F4F1EF;
+  border-radius: 6px;
+  background-color: #F4F1EF;
+}
+
+.form__notification_error {
+  color: #FFFFFF;
+  background-color: #FF490C;
+  border-color: #FF490C;
+}
+
 .form_quiz__step {
   display: grid;
   grid-template-columns: 1fr;
@@ -227,7 +244,7 @@
   padding: 8px 20px;
   font-size: 14px;
   font-weight: 800;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .nav__item:hover, .nav__item:focus {
@@ -574,6 +591,7 @@
   padding-left: 70px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .content__heading-2:before {
@@ -676,7 +694,7 @@
   text-align: center;
   padding: 40px;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
 }
 
@@ -696,7 +714,7 @@
   -o-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   background-color: #1D1D1B;
-  border-radius: 50%;
+  border-radius: 24px;
   z-index: -1;
 }
 
@@ -786,11 +804,15 @@
 .services__item-title {
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: -0.5px;
   padding-bottom: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #1D1D1B;
   -webkit-filter: opacity(0.5);
   filter: opacity(0.5);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .services__item-title--active {
@@ -799,15 +821,23 @@
 }
 
 .services__item-intro {
-  -webkit-filter: opacity(0);
-  filter: opacity(0);
-  height: 1px;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.services__item-intro--load {
+  height: 1px !important;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .services__item-intro--active {
-  -webkit-filter: opacity(1);
-  filter: opacity(1);
-  height: auto;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
 }
 
 .news {

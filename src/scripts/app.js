@@ -21,19 +21,12 @@ $(function() {
         autoFocus: false,
         dragToClose: false,
     });
-    // Slick
-    if( $('.slider') ){
-        $('.slider.slider_partners').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-        });
-    }
 });
 
 import './mouseup';
-// import '../blocks/tabs/tabs';
-// import '../items/input/input';
+import '../blocks/services/services';
+import '../items/form/form';
+
 // import '../items/slider/slider';
 // import '../items/toggle/toggle';
 // import '../items/item/item';

@@ -27,7 +27,8 @@
         transition: all .4s ease-in-out;
 
         background-color: $black;
-        border-radius: 50%;
+        // border-radius: 50%;
+        border-radius: $border-radius;
 
         z-index: -1;
     }

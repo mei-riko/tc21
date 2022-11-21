@@ -18,6 +18,8 @@
         &-title{
             text-transform: uppercase;
             font-weight: $font-weight-bolder;
+
+            letter-spacing: -0.5px;
             
             padding-bottom: map-get($map: $spacers, $key: 1);
             margin-bottom: map-get($map: $spacers, $key: 1);
@@ -25,18 +27,25 @@
             border-bottom: 1px solid $border-color;
 
             filter: opacity(0.5);
+            transition: $transition-base;
 
             &--active{
                 filter: opacity(1);
             }
         }
         &-intro{
-            filter: opacity(0);
-            height: 1px;
+            // filter: opacity(0);
+            overflow: hidden;
+            transition: 0.3s;
 
+            &--load{
+                height: 1px!important;
+                transition: 0.8s;
+            }
             &--active{
-                filter: opacity(1);
-                height: auto;
+                // filter: opacity(1);
+                // height: auto;
+                transition: 0.8s;
             }
         }
     }
