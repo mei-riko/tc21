@@ -64,6 +64,10 @@
   grid-gap: 20px;
 }
 
+.form__group_inside {
+  grid-gap: 10px;
+}
+
 .form__input {
   border: 1px solid #1D1D1B;
   border-radius: 6px;
@@ -127,6 +131,10 @@
   width: 100%;
 }
 
+.form__input_error, .form__input.error {
+  border-color: #FF490C;
+}
+
 .form__select {
   border: 1px solid #1D1D1B;
   border-radius: 6px;
@@ -152,6 +160,20 @@
   color: #FFFFFF;
   background-color: #FF490C;
   border-color: #FF490C;
+}
+
+.form__validation {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.form__validation .error {
+  display: block;
+  color: #FFFFFF !important;
+  padding: 10px 20px;
+  border: 1px solid #FF490C;
+  border-radius: 6px;
+  background-color: #FF490C;
 }
 
 .form_quiz__step {
@@ -599,7 +621,7 @@
 
 .content-gradient-hero {
   padding-top: 20px;
-  background: url("../img/gradient-brand-hero-desktop.webp") no-repeat top left/contain;
+  background: url("../img/gradient-brand-hero-desktop.webp") no-repeat top left/100%;
 }
 
 .content-gradient-hero_inside {

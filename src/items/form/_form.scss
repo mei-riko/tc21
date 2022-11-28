@@ -5,6 +5,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: map-get($map: $spacers, $key: 2);
+
+        &_inside{
+            grid-gap: map-get($map: $spacers, $key: 1);
+        }
     }    
     &__input{
         border: 1px solid $border-color;
@@ -28,6 +32,9 @@
 
         &--full{
             width: 100%;
+        }
+        &_error, &.error{
+            border-color: $red;
         }
     }
     &__select{
@@ -56,6 +63,19 @@
             color: $white;
             background-color: $red;
             border-color: $red;
+        }
+    }
+    &__validation{
+        font-size: map-get($map: $font-size, $key: xs);
+        font-weight: $font-weight-bolder;
+
+        .error{
+            display: block;
+            color: $white!important;
+            padding: map-get($map: $spacers, $key: 1) map-get($map: $spacers, $key: 2);
+            border: 1px solid $red;
+            border-radius: $border-radius/4;
+            background-color: $red;
         }
     }
 }
