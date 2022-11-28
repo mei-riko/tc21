@@ -3,77 +3,78 @@ extends ../blocks/main.pug
 block variables
     - var pageTitle = "Calculate Page"
 block content
-    .container
-        .content.content_hero
-            .row.justify-content-between.align-items-center
-                .col-6.col-sm-12
-                    p.content__heading-2.content__heading-2_inverse Рассчитать стоимость проекта
-                    h1.h3.content__heading-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor in mi id eget adipiscing cras 
-                .col-4.col-sm-12
-                    form.form.form_quiz(action="")
-                        .form_quiz__step.form_quiz__step--active.form_quiz__step_1
-                            input.form__input.form__input--full(type="text" placeholder="Имя")
-                            input.form__input.form__input--full(type="text" placeholder="Телефон")
-                            input.form__input.form__input--full(type="text" placeholder="Электронная почта")
-                            .form__notification.form__notification_error Заполните все поля
-                            .btn.btn_w-icon.btn_primary.btn--full(data-action="next") Следующий шаг (1/3)
-                                svg.btn_w-icon__icon(width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg")
-                                    path(d="M8.66699 3.83331L13.3337 8.49998L8.66699 13.1666M2.66699 8.49998H13.3337H2.66699Z" stroke="#F4F1EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
-                        .form_quiz__step.form_quiz__step_2
-                            input.form__input.form__input--full(type="text" placeholder="Компания")
-                            input.form__input.form__input--full(type="text" placeholder="Должность")
-                            select.form__select(name="")
-                                option Организация комплекса работ
-                                option Строительные работы
-                                option Работа с субподрядчиками
-                                option Обеспечение безопасности работ
-                                option Защита окружающей среды
-                                option Подготовка документации
-                                option Сдача в эксплуатацию
-                                option Проектирование
-                            .form__notification.form__notification_error Заполните все поля
-                            .btn.btn_w-icon.btn_primary.btn--full(data-action="next") Следующий шаг (2/3)
-                                svg.btn_w-icon__icon(width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg")
-                                    path(d="M8.66699 3.83331L13.3337 8.49998L8.66699 13.1666M2.66699 8.49998H13.3337H2.66699Z" stroke="#F4F1EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
-                        .form_quiz__step.form_quiz__step_3
-                            textarea.form__input(placeholder="Message")
-                            input.form__input-file(type="file")
-                            .form__group
-                                label.checkbox.checkbox--full(for="NDA")
-                                    input.checkbox__input(type="checkbox" name="NDA" id="NDA" value="" checked)
-                                    span.checkbox__label Нужно NDA
-                            .form__notification.form__notification_error Заполните все поля
-                            button.btn.btn_primary.btn--full(type="submit") Отправить заявку
-        .content
-            .row
-                .col-4.col-sm-12
-                    p.content__heading-2 Наши услуги
-                .col-8.col-sm-12
-                    p Мы, как генеральный подрядчик, реализуем полный комплекс функций по управлению строительством объекта благодаря умениям и знаниям по эффективному использованию кадровых, финансовых, материальных, технических и временных ресурсов.
-            .services.services_with-heading.services_animate
-                a.services__item.services__item--active(href="")
-                    .services__item-title.services__item-title--active Организация комплекса работ
-                    .services__item-intro.services__item-intro--active Организация и выполнение работ в строительном производстве осуществляться при соблюдении требований законодательства. Обустройство и содержание строительной площадки.
-                a.services__item(href="")
-                    .services__item-title Строительные работы
-                    .services__item-intro Осуществление технического надзора и контроля над производством и качеством строительно-монтажных работ; планирование, координация, контроль строительных и проектных контрактов
-                a.services__item(href="")
-                    .services__item-title Работа с субподрядчиками
-                    .services__item-intro Выбор субподрядчиков и поставщиков на тендерной основе по критериям профессионализма, надежности, стоимости и качества. Заключение договоров и координация субподрядных организаций. Заключение договоров с поставщиками, обеспечение строительства материалами, конструкциями и оборудованием. Обеспечение контроля за подрядными проектными организациями на предмет надлежащего выполнения ими  работ по договору. Обеспечение возможности бесперебойного выполнения  работ подрядчиками.
-                a.services__item(href="")
-                    .services__item-title Обеспечение безопасности работ
-                    .services__item-intro Контроль соблюдения  норм пожарной безопасности, охраны труда, техники безопасности,  а так же выполнение подготовительных работ по организации стройплощадки, необходимых для обеспечения безопасности строительства.
-                a.services__item(href="")
-                    .services__item-title Защита окружающей среды
-                    .services__item-intro Соблюдение экологических стандартов и взаимодействие с природоохранными органами. Изучение экологической карту местности для определения условий, разработка и внедрение плана по защите окружающей среды, экологический мониторинг. Особенное внимание уделяется организации утилизации отходов промышленного производства. 
-                a.services__item(href="")
-                    .services__item-title Подготовка документации
-                    .services__item-intro Получение всех согласований и разрешений на проведение работ: разрешение на строительство, правоустанавливающие документы на земельный участок, разрешение на подсоединение внешних инженерных коммуникаций. 
-                a.services__item(href="")
-                    .services__item-title Сдача в эксплуатацию
-                    .services__item-intro Подготовка к получению разрешения на ввод в эксплуатацию проводится на протяжении всего строительства в соответствии со СНиП. Проверка соответствия построенных сооружений проекту, нормам и техническим условиям.
-                a.services__item(href="")
-                    .services__item-title Проектирование
-                    .services__item-intro Разработка полного комплекта проектной документации, необходимой для строительства объекта, оснащения его технологическим оборудованием и подключения к наружным инженерным сетям.  Заключение необходимых договоров для обеспечения выпуска проектной документации в необходимом, требуемом объеме. Выполнение проектных работ в сроки, установленные «Графиком производства работ» и заключенным договором. Соблюдение бюджета проектирования. контроль проведения проектных работ, рекомендации по проектированию конкретного проекта с предоставлением отчета; подготовка технических условий на проектирование объекта и их согласование с проектной компанией. Согласование и утверждение предпроектной и проектно-сметной документации;
-        a.content.content_link(href="services.html") Подробнее об услугах
+    .content-gradient-hero
+        .container
+            .content.content_hero
+                .row.justify-content-between.align-items-center
+                    .col-6.col-sm-12
+                        p.content__heading-2.content__heading-2_inverse Рассчитать стоимость проекта
+                        h1.h3.content__heading-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor in mi id eget adipiscing cras 
+                    .col-4.col-sm-12
+                        form.form.form_quiz(action="")
+                            .form_quiz__step.form_quiz__step--active.form_quiz__step_1
+                                input.form__input.form__input--full(type="text" placeholder="Имя")
+                                input.form__input.form__input--full(type="text" placeholder="Телефон")
+                                input.form__input.form__input--full(type="text" placeholder="Электронная почта")
+                                .form__notification.form__notification_error Заполните все поля
+                                .btn.btn_w-icon.btn_primary.btn--full(data-action="next") Следующий шаг (1/3)
+                                    svg.btn_w-icon__icon(width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M8.66699 3.83331L13.3337 8.49998L8.66699 13.1666M2.66699 8.49998H13.3337H2.66699Z" stroke="#F4F1EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                            .form_quiz__step.form_quiz__step_2
+                                input.form__input.form__input--full(type="text" placeholder="Компания")
+                                input.form__input.form__input--full(type="text" placeholder="Должность")
+                                select.form__select(name="")
+                                    option Организация комплекса работ
+                                    option Строительные работы
+                                    option Работа с субподрядчиками
+                                    option Обеспечение безопасности работ
+                                    option Защита окружающей среды
+                                    option Подготовка документации
+                                    option Сдача в эксплуатацию
+                                    option Проектирование
+                                .form__notification.form__notification_error Заполните все поля
+                                .btn.btn_w-icon.btn_primary.btn--full(data-action="next") Следующий шаг (2/3)
+                                    svg.btn_w-icon__icon(width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+                                        path(d="M8.66699 3.83331L13.3337 8.49998L8.66699 13.1666M2.66699 8.49998H13.3337H2.66699Z" stroke="#F4F1EF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round")
+                            .form_quiz__step.form_quiz__step_3
+                                textarea.form__input(placeholder="Message")
+                                input.form__input-file(type="file")
+                                .form__group
+                                    label.checkbox.checkbox--full(for="NDA")
+                                        input.checkbox__input(type="checkbox" name="NDA" id="NDA" value="" checked)
+                                        span.checkbox__label Нужно NDA
+                                .form__notification.form__notification_error Заполните все поля
+                                button.btn.btn_primary.btn--full(type="submit") Отправить заявку
+            .content
+                .row
+                    .col-4.col-sm-12
+                        p.content__heading-2 Наши услуги
+                    .col-8.col-sm-12
+                        p Мы, как генеральный подрядчик, реализуем полный комплекс функций по управлению строительством объекта благодаря умениям и знаниям по эффективному использованию кадровых, финансовых, материальных, технических и временных ресурсов.
+                .services.services_with-heading.services_animate
+                    a.services__item.services__item--active(href="")
+                        .services__item-title.services__item-title--active Организация комплекса работ
+                        .services__item-intro.services__item-intro--active Организация и выполнение работ в строительном производстве осуществляться при соблюдении требований законодательства. Обустройство и содержание строительной площадки.
+                    a.services__item(href="")
+                        .services__item-title Строительные работы
+                        .services__item-intro Осуществление технического надзора и контроля над производством и качеством строительно-монтажных работ; планирование, координация, контроль строительных и проектных контрактов
+                    a.services__item(href="")
+                        .services__item-title Работа с субподрядчиками
+                        .services__item-intro Выбор субподрядчиков и поставщиков на тендерной основе по критериям профессионализма, надежности, стоимости и качества. Заключение договоров и координация субподрядных организаций. Заключение договоров с поставщиками, обеспечение строительства материалами, конструкциями и оборудованием. Обеспечение контроля за подрядными проектными организациями на предмет надлежащего выполнения ими  работ по договору. Обеспечение возможности бесперебойного выполнения  работ подрядчиками.
+                    a.services__item(href="")
+                        .services__item-title Обеспечение безопасности работ
+                        .services__item-intro Контроль соблюдения  норм пожарной безопасности, охраны труда, техники безопасности,  а так же выполнение подготовительных работ по организации стройплощадки, необходимых для обеспечения безопасности строительства.
+                    a.services__item(href="")
+                        .services__item-title Защита окружающей среды
+                        .services__item-intro Соблюдение экологических стандартов и взаимодействие с природоохранными органами. Изучение экологической карту местности для определения условий, разработка и внедрение плана по защите окружающей среды, экологический мониторинг. Особенное внимание уделяется организации утилизации отходов промышленного производства. 
+                    a.services__item(href="")
+                        .services__item-title Подготовка документации
+                        .services__item-intro Получение всех согласований и разрешений на проведение работ: разрешение на строительство, правоустанавливающие документы на земельный участок, разрешение на подсоединение внешних инженерных коммуникаций. 
+                    a.services__item(href="")
+                        .services__item-title Сдача в эксплуатацию
+                        .services__item-intro Подготовка к получению разрешения на ввод в эксплуатацию проводится на протяжении всего строительства в соответствии со СНиП. Проверка соответствия построенных сооружений проекту, нормам и техническим условиям.
+                    a.services__item(href="")
+                        .services__item-title Проектирование
+                        .services__item-intro Разработка полного комплекта проектной документации, необходимой для строительства объекта, оснащения его технологическим оборудованием и подключения к наружным инженерным сетям.  Заключение необходимых договоров для обеспечения выпуска проектной документации в необходимом, требуемом объеме. Выполнение проектных работ в сроки, установленные «Графиком производства работ» и заключенным договором. Соблюдение бюджета проектирования. контроль проведения проектных работ, рекомендации по проектированию конкретного проекта с предоставлением отчета; подготовка технических условий на проектирование объекта и их согласование с проектной компанией. Согласование и утверждение предпроектной и проектно-сметной документации;
+            a.content.content_link(href="services.html") Подробнее об услугах
 block footer

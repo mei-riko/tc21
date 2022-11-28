@@ -1,5 +1,6 @@
 .header-block{
     position: absolute;
+    top: map-get($map: $spacers, $key: 2);
     left: 0;
     right: 0;
     z-index: 9;

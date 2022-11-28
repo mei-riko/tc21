@@ -26,8 +26,9 @@ $(function() {
 import './mouseup';
 import '../blocks/services/services';
 import '../items/form/form';
+import '../items/tabs/tabs';
+import '../items/slider/slider';
 
-// import '../items/slider/slider';
 // import '../items/toggle/toggle';
 // import '../items/item/item';
 // import '../blocks/calculator/calculator';

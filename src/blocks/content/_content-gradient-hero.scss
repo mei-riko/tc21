@@ -1,0 +1,14 @@
+.content-gradient-hero{
+    padding-top: map-get($map: $spacers, $key: 2);
+
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+
+    background: url('../img/gradient-brand-hero-desktop.webp') no-repeat top left / contain;
+
+    &_inside{
+        background-position-y: -120px;
+    }
+}

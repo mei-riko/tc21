@@ -1,7 +1,7 @@
 .slider{
     &__item{
         height: auto;
-        padding: 0 map-get($map: $spacers, $key: 2);
+        padding: 0 map-get($map: $spacers, $key: 2) map-get($map: $spacers, $key: 3);
 
         // Slick
         &.slick-slide{
@@ -15,7 +15,11 @@
         width: 32px;
         height: 32px;
 
-        left: -32px;
+        top: auto;
+        bottom: 0;
+        left: 20px;
+
+        transform: translateY(32px);
 
         &:before{
             content: '';
@@ -31,7 +35,12 @@
         width: 32px;
         height: 32px;
         
-        right: -32px;
+        top: auto;
+        bottom: 0;
+        right: auto;
+        left: 62px;
+
+        transform: translateY(32px);
 
         &:before{
             content: '';
